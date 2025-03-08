@@ -3,7 +3,7 @@
 import TeamModel, { ITeam } from './team.model';
 import TeamPlayerModel, { ITeamPlayer, PlayerRole } from './team-player.model';
 import MatchModel, { IMatch, MatchStatus, InningsStatus } from './match.model';
-import PlayerModel, { IPlayer, BattingStyle, BowlingStyle } from './player.model';
+import PlayerModel, { IPlayer, BattingStyle, BowlingStyle,Role } from './player.model';
 import UniversityModel, { IUniversity } from './university.model';
 import MatchPlayerStatsModel, {
     IMatchPlayerStats,
@@ -16,6 +16,8 @@ import MatchBallByBallModel, {
     IMatchBallByBall,
     BallOutcome
 } from './match-ball-by-ball.model';
+import JwtToken ,{IJwtToken,} from "./jwt-token.model";
+import OTP,{IOTP,OTPType} from "./otp.model";
 
 export {
     // Models
@@ -26,6 +28,9 @@ export {
     UniversityModel,
     MatchPlayerStatsModel,
     MatchBallByBallModel,
+    JwtToken,
+    OTP,
+
 
     // Interfaces
     ITeam,
@@ -38,6 +43,9 @@ export {
     IBowlingStats,
     IFieldingStats,
     IMatchBallByBall,
+    IJwtToken,
+    IOTP,
+
 
     // Enums
     PlayerRole,
@@ -46,5 +54,7 @@ export {
     BattingStyle,
     BowlingStyle,
     PerformanceType,
-    BallOutcome
+    BallOutcome,
+    OTPType,
+    Role
 };

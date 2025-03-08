@@ -71,7 +71,6 @@ class EmailService {
             // Replace template variables
             const htmlContent = WELCOME_EMAIL_TEMPLATE
                 .replace('{playerName}', `${player.firstName} ${player.lastName}`)
-                .replace('{playerId}', player.playerId)
                 .replace('{universityName}', universityName)
                 .replace('{playerEmail}', player.email)
                 .replace('{dashboardURL}', dashboardURL);
